@@ -1,9 +1,11 @@
 import React from "react";
-import { Home, Login, NotFound, Register } from "@pages";
+import { Login, NotFound, Register, FlightDetails, FlightsList } from "@pages";
 import { Navigate, useRoutes } from "react-router-dom";
+import useAppSelector from "./hooks/useAppSelector";
+import { RootState } from "@store";
 
 const AppRoutes: React.FC = () => {
-  const isAuthenticated = false;
+  const { isLoggedIn } = useAppSelector((state: RootState) => state.auth);
 
   const routing = useRoutes([
     {
@@ -15,8 +17,16 @@ const AppRoutes: React.FC = () => {
       element: <Register />,
     },
     {
+      path: "/flights",
+      element: isLoggedIn ? <FlightsList /> : <Navigate to="/login" />,
+    },
+    {
+      path: "/flight-details",
+      element: isLoggedIn ? <FlightDetails /> : <Navigate to="/login" />,
+    },
+    {
       path: "/",
-      element: isAuthenticated ? <Home /> : <Navigate to="/login" />,
+      element: <Navigate to="/flights" />,
     },
 
     {
