@@ -1,30 +1,54 @@
-# React + TypeScript + Vite
+# Flight Ticket Management
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> a simple TODO app that allows you to register and create flight tickets
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Setup](#setup)
+- [Usage](#usage)
+- [Project Status](#project-status)
+- [Room for Improvement](#room-for-improvement)
+- [Acknowledgements](#acknowledgements)
+- [Contact](#contact)
+<!-- * [License](#license) -->
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- react-hook-form - version 7.49.2
+- yup - version 2.0
+- json-server- version 0.17.4
+- react-redux- version 9.0.4
+- reduxjs/toolkit- version 2.0.1
+- redux-persist- version 6.0.0
+- sass- version 1.69.5
+- dayjs- version 1.11.10
+- antd- version 5.12.3
+- axios- version 1.6.2
 
-- Configure the top-level `parserOptions` property like this:
+## Features
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+List the ready features here:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Create a new account
+- Login and list all available tickets
+- Form to create a new ticket
+- Ability to see tickets details and edit it
+- Ability to delete tickets
+- navigate in protected routes
+- create db server
+
+## Setup
+
+React + Vite
+
+## Structure
+
+-src
+---components => includes all views
+---hooks => includes custom hooks for dispatch actions
+---pages => includes all routes
+---store => includes redux config and api requests using thunks
+---utils => includes HTTP component used as axios interceptor
+-db.json
