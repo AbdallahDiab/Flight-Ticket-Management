@@ -19,8 +19,6 @@ export const login = createAsyncThunk(
       // You can save the token in localStorage here if needed
       return response;
     } catch (error: any) {
-      console.log("🚀 ~ file: thunks.ts:22 ~ error:", error);
-
       return rejectWithValue(error.response);
     }
   }

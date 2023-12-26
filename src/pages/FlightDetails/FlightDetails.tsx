@@ -1,9 +1,9 @@
+import { AddTicket, Col, Row } from "@components";
+
 export default function FlightDetails() {
   return (
-    <div>
-      <p>flightCode:</p>
-      <p>date:</p>
-      <p>capacity:</p>
-    </div>
+    <Row align="middle" justify="center">
+      <AddTicket type="edit" onClose={() => console.log("first")} />
+    </Row>
   );
 }

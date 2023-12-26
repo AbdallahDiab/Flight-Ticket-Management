@@ -35,7 +35,7 @@ const HTTP_REQUEST = async ({
     const token = window.localStorage.getItem("giza_system_access_token");
     auth_header = auth ? { Authorization: `Bearer ${token}` } : {};
   }
-  console.log(import.meta.env.VITE_DB_BASE_URL);
+
   try {
     const res = await axios({
       method,
@@ -58,7 +58,6 @@ const HTTP_REQUEST = async ({
     });
     return res;
   } catch (err: any) {
-    console.log("🚀 ~ file: HTTP.ts:60 ~ err:", err);
     message.error(err.response.data);
 
     // if (err?.response?.status === 401) {

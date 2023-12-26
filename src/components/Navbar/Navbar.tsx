@@ -1,5 +1,8 @@
-import { Avatar, Col, Dropdown, Row, Space } from "@components";
+import { Avatar, Dropdown, Space } from "@components";
+import { UserOutlined } from "@ant-design/icons";
 import { useNavigate } from "react-router-dom";
+import { Icon } from "@ui";
+
 // import Utils from "src/utilities";
 
 export default function Navbar() {
@@ -30,11 +33,7 @@ export default function Navbar() {
       >
         <a onClick={(e) => e.preventDefault()}>
           <Space>
-            {/* <Icon name="avatar" size={24} strokeColor="white" /> */}
-            <Avatar size={42}>
-              {/* {Utils.getNameInitial(`Ali Mog`)} */}
-              AH
-            </Avatar>
+            <Avatar size={42} icon={<UserOutlined />} />
           </Space>
         </a>
       </Dropdown>

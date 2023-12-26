@@ -15,6 +15,7 @@ export default defineConfig({
       "@hooks": "/src/hooks",
       "@slices": "/src/store/slices",
       "@assets": "/src/assets",
+      "@ui": "/src/ui",
       "@store": "/src/store",
       "@reducers": "/src/store/reducers",
       "@actions": "/src/store/actions",

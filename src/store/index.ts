@@ -1,11 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { authSlice } from "@slices";
+import { authSlice, ticketSlice } from "@slices";
 import { combineReducers } from "redux";
 import { persistReducer, persistStore } from "redux-persist";
 import storage from "redux-persist/lib/storage"; // defaults to localStorage for web
 
 const rootReducer = combineReducers({
   auth: authSlice,
+  ticket: ticketSlice,
 });
 
 const persistConfig = {

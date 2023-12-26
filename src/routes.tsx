@@ -21,7 +21,7 @@ const AppRoutes: React.FC = () => {
       element: isLoggedIn ? <FlightsList /> : <Navigate to="/login" />,
     },
     {
-      path: "/flight-details",
+      path: "/flights/:id",
       element: isLoggedIn ? <FlightDetails /> : <Navigate to="/login" />,
     },
     {

@@ -1,9 +1,6 @@
 {
   "users": [
     {
-      "id": "2"
-    },
-    {
       "email": "sdf@gmail.com",
       "password": "$2a$10$JBMLiHbCWO3yPzLlwlg4ru4YGk3v2jJWKMYoyb401tiIUssu/49k6",
       "id": "A7va5AD"
@@ -37,6 +34,60 @@
       "email": "diab@gmail.com",
       "password": "$2a$10$4ogX5VOijz8ME4o4/SdVW.SMW4b/nn2cPMXOlAhkvZ5Khyzex3xfu",
       "id": "Kf4ZfWE"
+    },
+    {
+      "email": "test@test.com",
+      "password": "$2a$10$OISUZjyv6KuzPX93CLZ.tudut07OYLuCL2rb4ScQHOhbzgX.NzdrK",
+      "id": "V2-QXw3"
+    },
+    {
+      "email": "t@t.com",
+      "password": "$2a$10$ctmSOQc1srCeDg2AZ5Ft6.Babwn3ZZx67tXn51LqhdiyBzEIBOxEK",
+      "id": "BdoB9yD"
+    }
+  ],
+  "ticket": [
+    {
+      "capacity": 51,
+      "date": "2024-01-05T22:00:00.000Z",
+      "code": "sdf",
+      "id": 1
+    },
+    {
+      "capacity": 41,
+      "date": "2024-01-05T22:00:00.000Z",
+      "code": "dfg",
+      "id": 2
+    },
+    {
+      "capacity": 15,
+      "date": "2023-12-26T22:00:00.000Z",
+      "code": "66666",
+      "id": 3
+    },
+    {
+      "capacity": 15,
+      "date": "2023-12-27T22:00:00.000Z",
+      "code": "555",
+      "id": 4
+    },
+    {
+      "capacity": 15,
+      "date": "2023-12-26T22:00:00.000Z",
+      "code": "6666655",
+      "id": 5
+    },
+    {
+      "capacity": 15,
+      "date": "2023-12-26T22:00:00.000Z",
+      "code": "6666655",
+      "id": 6
+    },
+    {
+      "capacity": 151,
+      "date": "2023-12-29T22:00:00.000Z",
+      "code": "888",
+      "id": 7
     }
   ]
 }

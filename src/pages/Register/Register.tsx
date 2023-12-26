@@ -34,8 +34,6 @@ export default function Register() {
         getFieldValue: (name: string | number | (string | number)[]) => any;
       }) => ({
         validator(_: any, value: string) {
-          console.log(_, "getFieldValue");
-          console.log(value, "value");
           if (!value || getFieldValue("password") === value) {
             return Promise.resolve();
           }
@@ -46,8 +44,6 @@ export default function Register() {
   };
   const onSignUp = (values: formValues) => {
     dispatch(register({ email: values.email, password: values.password }));
-
-    // navigate("/flights-list");
   };
   return (
     <div className="login-wrapper">

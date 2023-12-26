@@ -25,6 +25,7 @@
       "@components": ["./src/components"],
       "@pages": ["./src/pages"],
       "@utils": ["./src/utils"],
+      "@ui": ["./src/ui"],
       "@slices": ["./src/store/slices"],
       "@hooks": ["./src/hooks"],
       "@assets": ["./src/assets"],
